@@ -1,0 +1,15 @@
+# running in top_cover/src/
+read -formal top.v const.vh vga_sync.v tilemem.v ram.v font.v
+prep -top top
+opt -share_all
+
+memory_nordff
+async2sync
+chformal -assume -early
+chformal -live -fair -remove
+opt_clean
+setundef -anyseq
+opt -keepdc -fast
+check
+hierarchy -simcheck
+write_ilang ../model/design.il

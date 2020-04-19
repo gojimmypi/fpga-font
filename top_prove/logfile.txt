@@ -1,0 +1,29 @@
+SBY 13:27:07 [top_cover] Removing directory 'top_cover'.
+SBY 13:27:08 [top_prove] Removing directory 'top_prove'.
+SBY 13:27:08 [top_prove] Copy 'top.v' to 'top_prove/src/top.v'.
+SBY 13:27:08 [top_prove] Copy 'const.vh' to 'top_prove/src/const.vh'.
+SBY 13:27:08 [top_prove] Copy 'vga_sync.v' to 'top_prove/src/vga_sync.v'.
+SBY 13:27:08 [top_prove] Copy 'tilemem.v' to 'top_prove/src/tilemem.v'.
+SBY 13:27:08 [top_prove] Copy 'ram.v' to 'top_prove/src/ram.v'.
+SBY 13:27:08 [top_prove] Copy 'font.v' to 'top_prove/src/font.v'.
+SBY 13:27:08 [top_prove] engine_0: smtbmc
+SBY 13:27:08 [top_prove] base: starting process "cd top_prove/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 13:27:09 [top_prove] base: VERIFIC-WARNING [VERI-1875] top.v:92: identifier 'counter' is used before its declaration
+SBY 13:27:09 [top_prove] base: VERIFIC-WARNING [VERI-1875] top.v:98: identifier 'counter' is used before its declaration
+SBY 13:27:09 [top_prove] base: VERIFIC-WARNING [VERI-1199] ram.v:19: parameter declaration becomes local in 'ram' with formal parameter declaration list
+SBY 13:27:09 [top_prove] base: VERIFIC-WARNING [VERI-1238] tilemem.v:30: illegal defparam 'ram0.ROMFILE' in module 'tilemem'
+SBY 13:27:09 [top_prove] base: VERIFIC-WARNING [VERI-1927] tilemem.v:29: port 'waddr' remains unconnected for this instance
+SBY 13:27:09 [top_prove] base: VERIFIC-WARNING [VERI-1209] vga_sync.v:122: expression size 11 truncated to fit in target size 10
+SBY 13:27:09 [top_prove] base: VERIFIC-WARNING [VERI-1209] vga_sync.v:131: expression size 11 truncated to fit in target size 10
+SBY 13:27:09 [top_prove] base: VERIFIC-WARNING [VERI-1209] vga_sync.v:149: expression size 32 truncated to fit in target size 10
+SBY 13:27:09 [top_prove] base: VERIFIC-WARNING [VERI-1209] vga_sync.v:150: expression size 32 truncated to fit in target size 10
+SBY 13:27:09 [top_prove] base: VERIFIC-WARNING [VERI-1209] tilemem.v:20: expression size 12 truncated to fit in target size 9
+SBY 13:27:09 [top_prove] base: VERIFIC-WARNING [VDB-1053] tilemem.v:23: input port 'waddr[8]' remains unconnected for this instance
+SBY 13:27:09 [top_prove] base: VERIFIC-ERROR [VERI-1012] font.v:34: cannot open file 'BRAM_8.list'
+SBY 13:27:09 [top_prove] base: VERIFIC-ERROR [VERI-1063] top.v:145: instantiating unknown module 'divM'
+SBY 13:27:09 [top_prove] base: ERROR: font.v:34: cannot open file 'BRAM_8.list'
+SBY 13:27:09 [top_prove] base: finished (returncode=1)
+SBY 13:27:09 [top_prove] base: job failed. ERROR.
+SBY 13:27:09 [top_prove] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 13:27:09 [top_prove] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 13:27:09 [top_prove] DONE (ERROR, rc=16)

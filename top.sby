@@ -1,0 +1,23 @@
+[tasks]
+cover
+prove
+
+[options]
+prove:mode bmc
+cover:mode cover
+
+[engines]
+smtbmc
+
+[script]
+read -formal top.v const.vh vga_sync.v tilemem.v ram.v font.v 
+prep -top top
+opt -share_all
+
+[files]
+top.v
+const.vh
+vga_sync.v
+tilemem.v
+ram.v
+font.v

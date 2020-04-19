@@ -1,0 +1,18 @@
+[options]
+mode bmc
+
+[engines]
+smtbmc
+
+[script]
+read -formal top.v const.vh vga_sync.v tilemem.v ram.v font.v 
+prep -top top
+opt -share_all
+
+[files]
+top.v
+const.vh
+vga_sync.v
+tilemem.v
+ram.v
+font.v

@@ -7,3 +7,4 @@
 *.pnr
 *.log
 builddir/
+/.vs
