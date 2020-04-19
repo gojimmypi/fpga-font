@@ -21,7 +21,7 @@ module font (
         output reg data
     );
 
-    parameter FILE_FONT = "BRAM_8.list";
+    parameter FILE_FONT = "./BRAM_8.list";
 
     // Width and height image of font.
     // 16x16 characters, 8x8 col each

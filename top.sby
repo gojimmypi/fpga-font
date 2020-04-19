@@ -21,3 +21,4 @@ vga_sync.v
 tilemem.v
 ram.v
 font.v
+BRAM_8.list

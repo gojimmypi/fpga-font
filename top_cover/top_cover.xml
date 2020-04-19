@@ -6,32 +6,33 @@
 </properties>
 <testcase classname="top" name="cover" status="ERROR" time="0">
 <error message="ERROR" type="ERROR"/>
-<system-out>SBY 13:27:07 [top_cover] Removing directory 'top_cover'.
-SBY 13:27:07 [top_cover] Copy 'top.v' to 'top_cover/src/top.v'.
-SBY 13:27:07 [top_cover] Copy 'const.vh' to 'top_cover/src/const.vh'.
-SBY 13:27:07 [top_cover] Copy 'vga_sync.v' to 'top_cover/src/vga_sync.v'.
-SBY 13:27:07 [top_cover] Copy 'tilemem.v' to 'top_cover/src/tilemem.v'.
-SBY 13:27:07 [top_cover] Copy 'ram.v' to 'top_cover/src/ram.v'.
-SBY 13:27:07 [top_cover] Copy 'font.v' to 'top_cover/src/font.v'.
-SBY 13:27:07 [top_cover] engine_0: smtbmc
-SBY 13:27:07 [top_cover] base: starting process &quot;cd top_cover/src; yosys -ql ../model/design.log ../model/design.ys&quot;
-SBY 13:27:08 [top_cover] base: VERIFIC-WARNING [VERI-1875] top.v:92: identifier 'counter' is used before its declaration
-SBY 13:27:08 [top_cover] base: VERIFIC-WARNING [VERI-1875] top.v:98: identifier 'counter' is used before its declaration
-SBY 13:27:08 [top_cover] base: VERIFIC-WARNING [VERI-1199] ram.v:19: parameter declaration becomes local in 'ram' with formal parameter declaration list
-SBY 13:27:08 [top_cover] base: VERIFIC-WARNING [VERI-1238] tilemem.v:30: illegal defparam 'ram0.ROMFILE' in module 'tilemem'
-SBY 13:27:08 [top_cover] base: VERIFIC-WARNING [VERI-1927] tilemem.v:29: port 'waddr' remains unconnected for this instance
-SBY 13:27:08 [top_cover] base: VERIFIC-WARNING [VERI-1209] vga_sync.v:122: expression size 11 truncated to fit in target size 10
-SBY 13:27:08 [top_cover] base: VERIFIC-WARNING [VERI-1209] vga_sync.v:131: expression size 11 truncated to fit in target size 10
-SBY 13:27:08 [top_cover] base: VERIFIC-WARNING [VERI-1209] vga_sync.v:149: expression size 32 truncated to fit in target size 10
-SBY 13:27:08 [top_cover] base: VERIFIC-WARNING [VERI-1209] vga_sync.v:150: expression size 32 truncated to fit in target size 10
-SBY 13:27:08 [top_cover] base: VERIFIC-WARNING [VERI-1209] tilemem.v:20: expression size 12 truncated to fit in target size 9
-SBY 13:27:08 [top_cover] base: VERIFIC-WARNING [VDB-1053] tilemem.v:23: input port 'waddr[8]' remains unconnected for this instance
-SBY 13:27:08 [top_cover] base: VERIFIC-ERROR [VERI-1012] font.v:34: cannot open file 'BRAM_8.list'
-SBY 13:27:08 [top_cover] base: VERIFIC-ERROR [VERI-1063] top.v:145: instantiating unknown module 'divM'
-SBY 13:27:08 [top_cover] base: ERROR: font.v:34: cannot open file 'BRAM_8.list'
-SBY 13:27:08 [top_cover] base: finished (returncode=1)
-SBY 13:27:08 [top_cover] base: job failed. ERROR.
-SBY 13:27:08 [top_cover] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
-SBY 13:27:08 [top_cover] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
-SBY 13:27:08 [top_cover] DONE (ERROR, rc=16)
+<system-out>SBY 13:58:55 [top_cover] Removing directory 'top_cover'.
+SBY 13:58:56 [top_cover] Copy 'top.v' to 'top_cover/src/top.v'.
+SBY 13:58:56 [top_cover] Copy 'const.vh' to 'top_cover/src/const.vh'.
+SBY 13:58:56 [top_cover] Copy 'vga_sync.v' to 'top_cover/src/vga_sync.v'.
+SBY 13:58:56 [top_cover] Copy 'tilemem.v' to 'top_cover/src/tilemem.v'.
+SBY 13:58:56 [top_cover] Copy 'ram.v' to 'top_cover/src/ram.v'.
+SBY 13:58:56 [top_cover] Copy 'font.v' to 'top_cover/src/font.v'.
+SBY 13:58:56 [top_cover] Copy 'BRAM_8.list' to 'top_cover/src/BRAM_8.list'.
+SBY 13:58:56 [top_cover] engine_0: smtbmc
+SBY 13:58:56 [top_cover] base: starting process &quot;cd top_cover/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 13:58:57 [top_cover] base: VERIFIC-WARNING [VERI-1875] top.v:92: identifier 'counter' is used before its declaration
+SBY 13:58:57 [top_cover] base: VERIFIC-WARNING [VERI-1875] top.v:98: identifier 'counter' is used before its declaration
+SBY 13:58:57 [top_cover] base: VERIFIC-WARNING [VERI-1199] ram.v:19: parameter declaration becomes local in 'ram' with formal parameter declaration list
+SBY 13:58:57 [top_cover] base: VERIFIC-WARNING [VERI-1238] tilemem.v:30: illegal defparam 'ram0.ROMFILE' in module 'tilemem'
+SBY 13:58:57 [top_cover] base: VERIFIC-WARNING [VERI-1927] tilemem.v:29: port 'waddr' remains unconnected for this instance
+SBY 13:58:57 [top_cover] base: VERIFIC-WARNING [VERI-1209] vga_sync.v:122: expression size 11 truncated to fit in target size 10
+SBY 13:58:57 [top_cover] base: VERIFIC-WARNING [VERI-1209] vga_sync.v:131: expression size 11 truncated to fit in target size 10
+SBY 13:58:57 [top_cover] base: VERIFIC-WARNING [VERI-1209] vga_sync.v:149: expression size 32 truncated to fit in target size 10
+SBY 13:58:57 [top_cover] base: VERIFIC-WARNING [VERI-1209] vga_sync.v:150: expression size 32 truncated to fit in target size 10
+SBY 13:58:57 [top_cover] base: VERIFIC-WARNING [VERI-1209] tilemem.v:20: expression size 12 truncated to fit in target size 9
+SBY 13:58:57 [top_cover] base: VERIFIC-WARNING [VDB-1053] tilemem.v:23: input port 'waddr[8]' remains unconnected for this instance
+SBY 13:58:57 [top_cover] base: VERIFIC-WARNING [VDB-1002] font.v:31: net 'rom' does not have a driver
+SBY 13:58:57 [top_cover] base: VERIFIC-ERROR [VERI-1063] top.v:145: instantiating unknown module 'divM'
+SBY 13:58:57 [top_cover] base: ERROR: top.v:145: instantiating unknown module 'divM'
+SBY 13:58:57 [top_cover] base: finished (returncode=1)
+SBY 13:58:57 [top_cover] base: job failed. ERROR.
+SBY 13:58:57 [top_cover] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:01 (1)
+SBY 13:58:57 [top_cover] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 13:58:57 [top_cover] DONE (ERROR, rc=16)
 </system-out></testcase></testsuite></testsuites>
